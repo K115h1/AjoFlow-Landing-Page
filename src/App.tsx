@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router'
-import Landing from './pages/Landing'
-import Navbar from './components/Navbar'
+// import Landing from './pages/Landing'
+// import Navbar from './components/Navbar'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const App = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
       <Routes>
-        <Route path='/' element={<Landing/>}/>
+        {/* <Route path='/' element={<Landing/>}/> */}
       </Routes>
     </>
   )
