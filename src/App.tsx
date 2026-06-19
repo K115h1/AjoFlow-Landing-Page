@@ -3,13 +3,14 @@ import { Route, Routes } from 'react-router'
 // import Navbar from './components/Navbar'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AjoFlow from './pages/AjoFlow';
 
 const App = () => {
   return (
     <>
     {/* <Navbar/> */}
       <Routes>
-        {/* <Route path='/' element={<Landing/>}/> */}
+        <Route path='/' element={<AjoFlow/>}/>
       </Routes>
     </>
   )
