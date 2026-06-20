@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
+import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -237,7 +237,7 @@ function RotationWheel() {
               }}
             >
               <div
-                className={`w-14 h-14 rounded-full flex items-center justify-center font-display font-semibold text-sm border-2 transition-colors duration-500 ${
+                className={`w-20 h-20 rounded-full flex items-center justify-center font-display font-semibold text-sm border-2 transition-colors duration-500 ${
                   isActive
                     ? "bg-[#F2C200] border-[#F2C200] text-[#0B1F12] shadow-lg shadow-[#F2C200]/40 scale-110"
                     : "bg-white border-[#1B7A43]/20 text-[#0B1F12]/60"
@@ -246,7 +246,7 @@ function RotationWheel() {
                   transform: `rotate(${-angle - 90}deg) ${isActive ? "scale(1.1)" : ""}`,
                 }}
               >
-                <span style={{ transform: `rotate(${angle + 90}deg)` }}>{m.initials}</span>
+                <span style={{ transform: `rotate(${angle + 90}deg)` }}>{m.name}</span>
               </div>
             </div>
           );
